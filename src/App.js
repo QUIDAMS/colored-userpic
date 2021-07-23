@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import ColoredUserpic from './components/ColoredUserpic/';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ColoredUserpic 
+        src='https://www.rgo.ru/sites/default/files/styles/head_image_article/public/node/38230/kabancev-yurii-zerkalo-2018-379938.jpg?itok=llNijpJA'
+        backgroundColor='red'
+        size={150}
+        margin={4}
+        colors={['green', 'blue']}
+        hoverColors={['blue', 'green']}
+        colorWidth={6}
+      />
     </div>
   );
 }
